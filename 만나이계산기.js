@@ -16,5 +16,9 @@ function calculaetAge() {
   } else {
     age = today.getFullYear() - birthDate.getFullYear() - 1;
   }
+
+  elResult.innerText = "귀하의 만 나이는 ${age} 입니다.";
   return age;
 }
+
+elSubmit.addEventListener("click", calculaetAge);
